@@ -1,0 +1,18 @@
+{
+  "algorithm": "tabular Q-learning",
+  "episodes": 12000,
+  "seed": 45,
+  "seconds": 16.054829600267112,
+  "baseline": {
+    "episodes": 200,
+    "successes": 0,
+    "success_rate": 0.0,
+    "scope": "Abstract relative-grid arcade game with random target moves, not city navigation."
+  },
+  "evaluation": {
+    "episodes": 200,
+    "successes": 200,
+    "success_rate": 1.0,
+    "scope": "Abstract relative-grid arcade game with random target moves, not city navigation."
+  }
+}

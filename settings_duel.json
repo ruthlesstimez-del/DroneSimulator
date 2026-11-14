@@ -1,0 +1,26 @@
+{
+  "SettingsVersion": 1.2,
+  "SimMode": "Multirotor",
+  "ViewMode": "Fpv",
+  "EngineSound": false,
+  "CameraDirector": {"FollowDistance": -6},
+  "Vehicles": {
+    "Drone1": {
+      "VehicleType": "SimpleFlight", "AutoCreate": true, "IsFpvVehicle": false,
+      "X": 14, "Y": 10, "Z": 0,
+      "Sensors": {"Lidar1": {
+        "SensorType": 6, "Enabled": true, "NumberOfChannels": 8,
+        "Range": 30, "PointsPerSecond": 10000, "RotationsPerSecond": 10,
+        "VerticalFOVUpper": 15, "VerticalFOVLower": -25,
+        "HorizontalFOVStart": -180, "HorizontalFOVEnd": 180,
+        "DataFrame": "SensorLocalFrame"
+      }}
+    },
+    "PlayerDrone": {
+      "VehicleType": "SimpleFlight", "AutoCreate": true, "IsFpvVehicle": true,
+      "X": 0, "Y": 0, "Z": 0,
+      "Cameras": {"front_center": {"X": -9,"Y": 0,"Z": -4,"Pitch": -15,
+        "CaptureSettings": [{"ImageType": 0,"FOV_Degrees": 105}]}}
+    }
+  }
+}

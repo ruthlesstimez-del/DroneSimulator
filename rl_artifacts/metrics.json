@@ -1,0 +1,21 @@
+{
+  "algorithm": "tabular Q-learning",
+  "seed": 42,
+  "training_episodes": 20000,
+  "training_seconds": 6.91043940000236,
+  "before_training": {
+    "episodes": 200,
+    "successes": 0,
+    "success_rate": 0.0,
+    "collision_actions": 22563,
+    "mean_success_steps": null
+  },
+  "evaluation": {
+    "episodes": 200,
+    "successes": 200,
+    "success_rate": 1.0,
+    "collision_actions": 0,
+    "mean_success_steps": 15.74
+  },
+  "scope": "Random starts on this same sampled local grid."
+}

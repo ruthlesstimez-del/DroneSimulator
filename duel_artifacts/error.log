@@ -1,0 +1,37 @@
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 291, in main
+    game.tick()
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 117, in tick
+    positions=self.positions()
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 76, in positions
+    return {name: self.client.simGetObjectPose(name).position for name in (AI,PLAYER)}
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 76, in <dictcomp>
+    return {name: self.client.simGetObjectPose(name).position for name in (AI,PLAYER)}
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\.venv\lib\site-packages\airsim\client.py", line 498, in simGetObjectPose
+    pose = self.client.call('simGetObjectPose', object_name)
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\.venv\lib\site-packages\msgpackrpc\session.py", line 41, in call
+    return self.send_request(method, args).get()
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\.venv\lib\site-packages\msgpackrpc\future.py", line 43, in get
+    raise self._error
+msgpackrpc.error.TimeoutError: Request timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 300, in <module>
+    main()
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 296, in main
+    game.publish()
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 80, in publish
+    positions=self.positions()
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 76, in positions
+    return {name: self.client.simGetObjectPose(name).position for name in (AI,PLAYER)}
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\duel_game.py", line 76, in <dictcomp>
+    return {name: self.client.simGetObjectPose(name).position for name in (AI,PLAYER)}
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\.venv\lib\site-packages\airsim\client.py", line 498, in simGetObjectPose
+    pose = self.client.call('simGetObjectPose', object_name)
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\.venv\lib\site-packages\msgpackrpc\session.py", line 41, in call
+    return self.send_request(method, args).get()
+  File "C:\Users\LENOVO\OneDrive\Desktop\DroneSimulator\.venv\lib\site-packages\msgpackrpc\future.py", line 43, in get
+    raise self._error
+msgpackrpc.error.TimeoutError: Request timed out
